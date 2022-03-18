@@ -80,7 +80,7 @@ public class MarsRoverHelper {
 	 */
 	public static void processInstructions(Plateau plateau) {
 		for(Rover rover : plateau.getRovers()) {
-			if(rover != null) {
+			if(rover != null && rover.getInstructions()!= null) { 
 				for(char instruction : rover.getInstructions()) {
 					switch (instruction) {
 						case 'l':
